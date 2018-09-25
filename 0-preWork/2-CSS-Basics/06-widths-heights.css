@@ -1,0 +1,13 @@
+.wrapper{
+    margin: 5px;
+}
+​
+h1{
+    text-align: center;
+}
+
+.example1{
+    height: 150px;
+    width: 50%;
+    background-color: cornflowerblue;
+}
