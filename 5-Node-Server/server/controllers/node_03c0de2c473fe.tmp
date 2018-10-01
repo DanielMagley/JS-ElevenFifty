@@ -58,37 +58,19 @@ router.post("/six", function(req, res) {
 });
 
 router.post("/seven", function(req, res) {
-  var testData = req.body.testdata.item;
+  var testdata = req.body.testdata.item;
   TestModel.create({
     testdata: testData
   }).then(
     function createSuccess(testdata) {
       res.json({
-        testdata: testdata
+        testdata: testData
       });
     },
     function createError(err) {
       res.send(500, err.message);
     }
   );
-});
-
-router.get("/one", (req, res) => {
-  TestModel.findAll({
-    attributes: ["id", "testdata"]
-  }).then(
-    function findAllSuccess(data) {
-      console.log("Controller data:", data);
-      res.json(data);
-    },
-    function findAllError(err) {
-      res.send(500, err.message);
-    }
-  );
-});
-
-router.get("/helloclient", (req, res) => {
-  res.send("This is a message from the server to the client");
 });
 
 module.exports = router;
