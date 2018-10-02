@@ -1,5 +1,5 @@
 {
-  "name": "projectapp",
+  "name": "workoutlog",
   "version": "1.0.0",
   "description": "server for project app",
   "main": "app.js",
