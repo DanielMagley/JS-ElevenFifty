@@ -1,0 +1,128 @@
+html,
+body {
+  background-color: #5494ca;
+}
+
+.container {
+  display: grid;
+  min-width: cover;
+  grid-template-rows: 5vh 10vh 50vh 50vh 40vh 8vh;
+  grid-template-columns: 35vw 35vw 35vw;
+  grid-template-areas:
+    "top top top"
+    "navbar navbar navbar"
+    "imageOne imageOne imageOne"
+    "leftText textImage rightText"
+    "imageTwo imageTwo imageTwo"
+    "footer footer footer";
+}
+.top {
+  grid-area: top;
+  background-color: #065d9a;
+}
+
+.navbar {
+  grid-area: navbar;
+  padding: 12px;
+  /* margin-bottom: 8px; */
+  background-color: #c7c1aa;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.one {
+  background-color: maroon;
+  align-content: center;
+  padding: 10px 35px;
+  color: beige;
+}
+
+.two {
+  background-color: blue;
+  align-content: center;
+  padding: 10px 35px;
+  color: beige;
+}
+
+.three {
+  background-color: #5494ca;
+  align-content: center;
+  padding: 10px 35px;
+  color: beige;
+}
+
+.navbar input {
+  float: right;
+  /* display: inline; */
+  /* background-color: brown; */
+  margin-top: -45px;
+  padding: 12px 35px;
+}
+
+.middle {
+  grid-area: textImage;
+  background-color: #5494ca;
+}
+.imageOne {
+  grid-area: imageOne;
+  background-image: url("https://images.pexels.com/photos/1252873/pexels-photo-1252873.jpeg?cs=srgb&dl=4k-wallpaper-astronomy-evening-1252873.jpg&fm=jpg");
+  background-size: 100%;
+  /* z-index: 1; */
+}
+
+.leftText {
+  grid-area: leftText;
+  background-color: #5494ca;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  padding: 50px 80px 20px 80px;
+}
+
+.textImage {
+  grid-area: textImage;
+  background-color: aqua;
+  background-image: url("https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg?cs=srgb&dl=astronomy-earth-explosion-2159.jpg&fm=jpg");
+  border-radius: 50%;
+}
+
+#image {
+  grid-area: textImage;
+  z-index: 1;
+  background-image: url("https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg?cs=srgb&dl=astronomy-earth-explosion-2159.jpg&fm=jpg");
+  background-size: 100%;
+}
+
+.rightText {
+  grid-area: rightText;
+  background-color: #5494ca;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  padding: 50px 80px 20px 40px;
+}
+
+.imageTwo {
+  grid-area: imageTwo;
+  background-image: url("https://images.pexels.com/photos/5439/earth-space.jpg?cs=srgb&dl=atmosphere-cosmos-earth-5439.jpg&fm=jpg");
+  background-size: 100%;
+}
+
+.padding {
+  grid-area: padding;
+  background-color: #5494ca;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(44, 42, 42);
+}
+
+.footer li {
+  display: inline;
+  align-content: center;
+  padding: 12px;
+  color: rgb(151, 150, 150);
+}
